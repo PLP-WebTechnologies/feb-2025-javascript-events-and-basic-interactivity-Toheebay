@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Elements</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Interactive Web Elements</h1>
+
+  <!-- 1. Event Handling -->
+  <h2>Button Click</h2>
+  <button id="clickButton">Click Me</button>
+
+  <h2>Hover Effect</h2>
+  <button id="hoverButton">Hover Over Me</button>
+
+  <h2>Keypress Detection</h2>
+  <input type="text" id="keypressInput" placeholder="Type something..." />
+
+  <h2>Double Click or Long Press</h2>
+  <button id="secretButton">Double Click or Hold Me</button>
+
+  <!-- 2. Interactive Elements -->
+  <h2>Change Text or Color</h2>
+  <button id="changeButton">Change Text or Color</button>
+
+  <h2>Image Gallery (Slideshow)</h2>
+  <div id="gallery">
+    <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Image 1" class="gallery-item">
+    <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Image 2" class="gallery-item">
+    <img src="https://via.placeholder.com/300x200?text=Image+3" alt="Image 3" class="gallery-item">
+  </div>
+
+  <h2>Tabs or Accordion</h2>
+  <div class="tabs">
+    <button class="tab" onclick="openTab('tab1')">Tab 1</button>
+    <button class="tab" onclick="openTab('tab2')">Tab 2</button>
+    <button class="tab" onclick="openTab('tab3')">Tab 3</button>
+  </div>
+  <div id="tab1" class="tab-content">Content for Tab 1</div>
+  <div id="tab2" class="tab-content">Content for Tab 2</div>
+  <div id="tab3" class="tab-content">Content for Tab 3</div>
+
+  <!-- 3. Form Validation -->
+  <h2>Form Validation</h2>
+  <form id="myForm">
+    <input type="text" id="name" required placeholder="Your name">
+    <button type="submit">Submit</button>
+  </form>
+
+  <form id="emailForm">
+    <input type="email" id="email" required placeholder="Your email">
+    <button type="submit">Submit</button>
+  </form>
+
+  <form id="passwordForm">
+    <input type="password" id="password" required placeholder="Password (min 8 characters)">
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Real-time Feedback</h2>
+  <input type="text" id="realTimeInput" placeholder="Type something...">
+  <p id="feedback" class="feedback"></p>
+
+  <!-- Bonus: Animation -->
+  <div id="animatedBox">I will fade in!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
